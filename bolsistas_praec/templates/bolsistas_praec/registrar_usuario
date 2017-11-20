@@ -1,0 +1,4 @@
+{% extends 'bolsistas_praec/base.html' %}
+{% block content %}
+<head>
+{% endblock %}
