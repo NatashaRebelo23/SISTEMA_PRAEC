@@ -33,11 +33,27 @@ class UsuarioForm(forms.ModelForm):
         fields = ('siape',)
         labels = {
             'siape': 'Código SIAPE',
-            }
+        }
+
+
+#username = forms.CharField(label=u'Username', max_length=30)
+#    first_name = forms.CharField(label=u'First Name', max_length=30)
+#    last_name = forms.CharField(label=u'Last Name', max_length=30)
+#    email = forms.EmailField(label=u'Email')
+#    password1 = forms.CharField(
+#                               label=u'Password',
+#                               widget=forms.PasswordInput()
+#                               )
+#   password2 = forms.CharField(
+#                               label=u'Password (Again)',
+#                               widget=forms.PasswordInput()
+#                              )  
 
 class AlunoForm(forms.ModelForm):
+
     data_preenchimento = forms.DateField(input_formats=settings.DATE_INPUT_FORMATS)
     data_preenchimento_termino = forms.DateField(input_formats=settings.DATE_INPUT_FORMATS)
+     
     class Meta:
         model = Aluno
         fields = '__all__'
@@ -50,7 +66,7 @@ class AlunoForm(forms.ModelForm):
 	    'cpf': 'CPF do aluno',
 	    'data_preenchimento': 'Data de Preenchimento do cadastro',
         'data_preenchimento_termino': 'Data de Término do cadastro',
-	}
+	};
 
 class Bolsa_AuxilioForm(forms.ModelForm):
     #pesquisa o aluno e vincula a bolsa

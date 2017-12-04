@@ -1,10 +1,38 @@
 {% extends 'base.html' %}
 {% block content %}
-<form action="" enctype="" method="post">
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastrar/Cadastro Form</title>
+  <link href='https://fonts.googleapis.com/css?family=Titillium+Web:300,500,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+
+<!--<div class="form" align="center">-->
+<form action="" enctype="" method="post"  align = "center"  novalidate=""> 
+<div class="form" align="center">
 	{% csrf_token %}
+
 	<table>
-	{{form.as_table}}
+		<h2>
+  		 <table><h2>Cadastro do aluno</h2></table>
+			{{form.as_ul}}<br>
+		</h2>>
 	</table>
-	<input type="submit" value="Submit"/>
+	<br><br>
+	<button type="submit" style="">Criar</button>
+	<!--<input type="submit" value="Cadastrar">  -->
+
+        <br><br><br>
+        <input type="hidden" name="next" value="{% url 'bolsistas_praec:index' %}"/>         
+
+    <h1><a href="{% url 'bolsistas_praec:index' %}"></a></h1> 
+</div>
 </form>
+
+<!--</div>-->
 {% endblock %} 

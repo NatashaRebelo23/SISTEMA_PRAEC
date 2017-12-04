@@ -1,9 +1,13 @@
 {% extends 'base.html' %}
 {% block content %}
+	<div class="form" align="center">
 		<head>
 			<title>PRAEC</title>
 		</head>
-	    <h1>Alunos beneficiados pelo auxílio</h1>
-		<h1><a href= "{% url 'bolsistas_praec:add_aluno' %}" >Cadastrar Aluno</a></h1>
+	    <h2>FUNCIONALIDADES</h2>
+		<h2><a href= "{% url 'bolsistas_praec:add_aluno' %}" >Cadastrar Aluno</a></h2>
+		<h2><a href= "{% url 'bolsistas_praec:add_aluno' %}" >Modificar Aluno</a></h2>    <!--  deve ser no listar alunos. Em 																					  seguida modifica_cadastro.  																					      	   -->
+</div>
+
 
 {% endblock %}
