@@ -12,13 +12,11 @@ h1 {
 
 
 h2 {
-  background: #CD5C5C;
-
-  margin-left: 40px;
   text-align: right;
-  font-family: 'Arial', sans-serif;
-  color:   #CD5C5C;
   margin: 5 5 20px;
+  font-family: 'Arial', sans-serif;
+  color:   #ffffff;
+  margin-left: 40px;
   transition: .5s ease;
   background-image: none;
 
